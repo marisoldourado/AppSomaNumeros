@@ -1,0 +1,2 @@
+rootProject.name='SomaNumeros'
+include ':app'

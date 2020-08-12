@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import br.edu.ifsp.arq.dmos5_2020s1.somanumeros.R;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText n2EditText;
     private EditText n3EditText;
     private Button somarButon;
+    private TextView saidaTxtView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         n1EditText = findViewById(R.id.edittext_n1);
         n2EditText = findViewById(R.id.edittext_n2);
         n3EditText = findViewById(R.id.edittext_n3);
-
+        saidaTxtView = findViewById(R.id.txtview_saida);
         somarButon = findViewById(R.id.buttonSomar);
 
         somarButon.setOnClickListener(this);
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         soma = n1 + n2 + n3;
-        Toast.makeText(this, String.format("Resultado da soma: %.2f", soma), Toast.LENGTH_LONG).show();
+        saidaTxtView.setText(String.format("Resultado da soma: %.2f", soma));
+       // Toast.makeText(this, String.format("Resultado da soma: %.2f", soma), Toast.LENGTH_LONG).show();
     }
 }

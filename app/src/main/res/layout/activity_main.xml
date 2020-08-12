@@ -38,5 +38,16 @@
         android:id="@+id/buttonSomar"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"/>
+    
+    <TextView
+        android:id="@+id/txtview_saida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AQUI"
+        android:textColor="#388E3C"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
 
 </LinearLayout>

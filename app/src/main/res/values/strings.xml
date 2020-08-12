@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">SomaNumeros</string>
-    <string name="digite_o_primeiro_n_mero">Digite o primeiro número</string>
-    <string name="digite_o_segundo_n_mero">Digite o segundo número</string>
+    <string name="edit_hint">Digite um número</string>
     <string name="somar">somar</string>
 </resources>

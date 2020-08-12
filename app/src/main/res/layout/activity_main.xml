@@ -13,7 +13,7 @@
         android:layout_margin="10dp"
         android:id="@+id/edittext_n1"
         android:inputType="number"
-        android:hint="@string/digite_o_primeiro_n_mero"/>
+        android:hint="@string/edit_hint"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +21,15 @@
         android:layout_margin="10dp"
         android:id="@+id/edittext_n2"
         android:inputType="number"
-        android:hint="@string/digite_o_segundo_n_mero"/>
+        android:hint="@string/edit_hint"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/edittext_n3"
+        android:inputType="number"
+        android:hint="@string/edit_hint"/>
 
     <Button
         android:layout_width="wrap_content"

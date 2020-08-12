@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private EditText n1EditText;
     private EditText n2EditText;
+    private EditText n3EditText;
     private Button somarButon;
 
     @Override
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         n1EditText = findViewById(R.id.edittext_n1);
         n2EditText = findViewById(R.id.edittext_n2);
+        n3EditText = findViewById(R.id.edittext_n3);
+
         somarButon = findViewById(R.id.buttonSomar);
 
         somarButon.setOnClickListener(this);
@@ -36,23 +39,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void somar() {
-        double n1, n2, soma;
+        double n1, n2, n3, soma;
 
         try {
             n1 = Double.valueOf(n1EditText.getText().toString());
             n2 = Double.valueOf(n2EditText.getText().toString());
+            n3 = Double.valueOf(n3EditText.getText().toString());
+
 
         }
         catch (NumberFormatException ex) {
             n1 = 0;
             n2 = 0;
+            n3 = 0;
 
             Toast.makeText(this, "Erro na entrada de dados", Toast.LENGTH_LONG).show();
 
             return;
         }
 
-        soma = n1 + n2;
+        soma = n1 + n2 + n3;
         Toast.makeText(this, String.format("Resultado da soma: %.2f", soma), Toast.LENGTH_LONG).show();
     }
 }
